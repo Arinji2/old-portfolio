@@ -17,7 +17,7 @@ function App() {
 
 function Nav() {
   const [scroll, onScroll] = useState(0);
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
