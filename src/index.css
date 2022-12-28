@@ -3,8 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Silkscreen", cursive;
+  scroll-behavior: smooth;
 }
 
 .link-underline {

@@ -1,12 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
+import {
+  faReact,
+  faJs,
+  faHtml5,
+  faJava,
+} from "@fortawesome/free-brands-svg-icons";
 import TailwindPic from "../assets/tailwindcss.svg";
 
 function Language() {
   return (
     <div>
-      <div className="bg-transparent h-screen w-full z-50 flex flex-col items-center justify-center">
+      <div
+        className="bg-transparent h-screen w-full z-50 flex flex-col items-center justify-center mt-32"
+        id="lang"
+      >
         <h1 className="text-4xl text-white z-30 text-center">
           A list of Frameworks and Libraries Used by Me
         </h1>
@@ -21,7 +29,7 @@ function Language() {
         <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-5 z-20">
           <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-blue-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
             <h1 className="text-xl">Lines Written</h1>
-            <p>2000+</p>
+            <p>3000+</p>
           </div>
           <FontAwesomeIcon icon={faReact} className="text-8xl" />
           <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-blue-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
@@ -41,12 +49,69 @@ function Language() {
         <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-5 z-20">
           <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-cyan-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
             <h1 className="text-xl">Lines Written</h1>
-            <p>4000+</p>
+            <p>2000+</p>
           </div>
           <img src={TailwindPic} className="text-9xl" />
           <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-cyan-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
             <h1 className="text-xl">Projects Made</h1>
             <p>7+</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-orange-700 h-[120vh] md:h-[80vh] w-full flex flex-col items-center justify-start text-white gap-14">
+        <h1 className="text-4xl text-white mt-10 z-20">Javascript</h1>
+
+        <p className="z-20 text-center">
+          JavaScript is a cross-platform, object-oriented scripting language
+          used to make webpages interactive.
+        </p>
+        <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-5 z-20">
+          <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-orange-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
+            <h1 className="text-xl">Lines Written</h1>
+            <p>1500+</p>
+          </div>
+          <FontAwesomeIcon icon={faJs} className="text-8xl" />
+          <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-orange-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
+            <h1 className="text-xl">Projects Made</h1>
+            <p>3+</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-yellow-700 h-[120vh] md:h-[80vh] w-full flex flex-col items-center justify-start text-white gap-14">
+        <h1 className="text-4xl text-white mt-10 z-20">Java</h1>
+
+        <p className="z-20 text-center">
+          Java is a class-based object-oriented simple programming language.
+        </p>
+        <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-5 z-20">
+          <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-yellow-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
+            <h1 className="text-xl">Lines Written</h1>
+            <p>800+</p>
+          </div>
+          <FontAwesomeIcon icon={faJava} className="text-8xl" />
+          <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-yellow-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
+            <h1 className="text-xl">Projects Made</h1>
+            <p>1+</p>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-700 h-[120vh] md:h-[80vh] w-full flex flex-col items-center justify-start text-white gap-14">
+        <h1 className="text-4xl text-white mt-10 z-20">HTML</h1>
+
+        <p className="z-20 text-center">
+          HTML is a markup language used by the browser to manipulate text,
+          images, and other content, in order to display it in the required
+          format.
+        </p>
+        <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-5 z-20">
+          <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-green-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
+            <h1 className="text-xl">Lines Written</h1>
+            <p>500+</p>
+          </div>
+          <FontAwesomeIcon icon={faHtml5} className="text-8xl" />
+          <div className="w-[30vh] h-[30vh] shadow-md shadow-black bg-green-900 rounded-lg flex flex-col items-center justify-center text-white gap-5 scale-90 hover:scale-100 hover:cursor-pointer transition-all ease-in-out duration-500">
+            <h1 className="text-xl">Projects Made</h1>
+            <p>1+</p>
           </div>
         </div>
       </div>

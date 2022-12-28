@@ -32,19 +32,19 @@ function Nav() {
         <div className="w-[70%]  flex flex-row items-center justify-end mr-5  text-xl gap-5">
           <ul className="inline">
             <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
-              Languages
+              <a href="#about">About</a>
             </li>{" "}
             <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
-              Projects
+              <a href="#lang">Languages</a>
             </li>{" "}
             <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
-              Contributions
+              <a href="#projects">Projects</a>
             </li>{" "}
             <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
-              Commisions
+              <a href="#price">Commissions</a>
             </li>{" "}
             <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
-              Socials
+              <a href="#socials">Socials</a>
             </li>
           </ul>
         </div>
@@ -85,19 +85,19 @@ function Nav() {
             >
               <ul className="">
                 <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
-                  Languages
+                  <a href="#about">About</a>
                 </li>{" "}
                 <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
-                  Projects
+                  <a href="#lang">Languages</a>
                 </li>{" "}
                 <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
-                  Contributions
+                  <a href="#projects">Projects</a>
                 </li>{" "}
                 <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
-                  Commisions
+                  <a href="#price">Commissions</a>
                 </li>{" "}
                 <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
-                  Socials
+                  <a href="#socials">Socials</a>
                 </li>
               </ul>
             </div>
