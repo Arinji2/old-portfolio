@@ -5,11 +5,11 @@ import Library from "../assets/Library.jpg";
 import ToDo from "../assets/ToDo.jpg";
 
 function Projects() {
-  const [scrollY, setScrollY] = useState(window.pageYOffset - 7000);
+  const [scrollY, setScrollY] = useState(window.pageYOffset - 9000);
 
   useEffect(() => {
     function handleScroll() {
-      setScrollY(window.pageYOffset - 7000); // Subtract the height of the other parallax element from the current scroll position
+      setScrollY(window.pageYOffset - 9000); // Subtract the height of the other parallax element from the current scroll position
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -23,13 +23,13 @@ function Projects() {
     <div className="bg-white  w-full">
       <img
         src={projectPic}
-        className="w-full md:h-[200vh] h-[200vh] object-cover object-center absolute -z-10"
+        className="w-full md:h-[400vh] h-[200vh] object-cover object-center absolute -z-10"
         id="pic"
-        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       />
       <div
-        className="bg-black opacity-50 w-full md:h-[200vh] h-[200vh] absolute z-0"
-        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        className="bg-black opacity-50 w-full md:h-[400vh] h-[200vh] absolute z-0"
+        style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       ></div>
       <div className="w-full h-screen flex flex-col items-center z-20 absolute gap-20">
         <h1 className="text-white text-4xl mt-10" id="projects">
