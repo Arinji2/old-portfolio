@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import Languages from "./components/languages";
 
 import Nav from "./components/nav";
+import Projects from "./components/projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About />
       <Languages />
+      <Projects />
     </div>
   );
 }
