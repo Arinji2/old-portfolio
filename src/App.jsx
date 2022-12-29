@@ -39,18 +39,12 @@ function App() {
       <div
         className={ready ? "App bg-transparent h-fit scroll-smooth" : "hidden"}
       >
-        <img
-          src={projectPic}
-          className="w-full md:h-[550vh] h-[700vh] object-cover object-center absolute -z-10"
-          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
-          id="pic"
-        />
         <Nav />
         <Hero />
         <About />
         <Languages />
         <Projects />
-        <div className="h-[100vh] w-full relative"></div>
+
         <Commissions />
       </div>
       <div

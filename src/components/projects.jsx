@@ -1,15 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import projectPic from "../assets/projects.png";
 import InfoBot from "../assets/InfoBot.jpg";
 import Library from "../assets/Library.jpg";
 import ToDo from "../assets/ToDo.jpg";
 
 function Projects() {
-  const [scrollY, setScrollY] = useState(window.pageYOffset - 9000);
+  const [scrollY, setScrollY] = useState(window.pageYOffset - 2000);
+  const elementRef = useRef(null);
 
   useEffect(() => {
+    const element = elementRef.current;
+    const { top, left } = element.getBoundingClientRect();
+    console.log(`Element position: (${left}, ${top})`);
+    console.log(window.pageYOffset);
+  }, []);
+  useEffect(() => {
     function handleScroll() {
-      setScrollY(window.pageYOffset - 9000); // Subtract the height of the other parallax element from the current scroll position
+      setScrollY(window.pageYOffset - 2000);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -20,8 +27,17 @@ function Projects() {
   }, []);
 
   return (
-    <div className="bg-green-400  w-full">
-      <div className="w-full h-screen flex flex-col items-center z-20 absolute gap-20">
+    <div className="bg-transparent h-screen w-full relative">
+      <div className="w-full h-screen flex flex-col items-center z-20 relative gap-20">
+        <div className="z-0">
+          <img
+            src={projectPic}
+            alt={"hero"}
+            className="absolute md:h-full h-[180vh] w-full object-cover z-0 left-0"
+            /*style={{ transform: `translateY(${scrollY * 0.5}px)` }} */
+            ref={elementRef}
+          />
+        </div>
         <h1 className="text-white text-4xl mt-10" id="projects">
           My Projects
         </h1>

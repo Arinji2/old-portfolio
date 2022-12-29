@@ -12,7 +12,7 @@ function Language() {
   return (
     <div>
       <div
-        className="bg-transparent h-screen w-full z-50 flex flex-col items-center justify-center mt-32"
+        className="bg-black h-screen w-full z-50 flex flex-col items-center justify-center relative"
         id="lang"
       >
         <h1 className="text-4xl text-white z-30 text-center">

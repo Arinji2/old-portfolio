@@ -3,7 +3,7 @@ import aboutPic from "../assets/about.png";
 function About() {
   return (
     <div>
-      <div className=" h-screen w-full z-30 flex flex-col items-center justify-center">
+      <div className=" h-screen w-full z-40 flex flex-col items-center justify-center bg-black relative">
         <h1 className="text-4xl text-white z-30 text-center">About Me</h1>
       </div>
       <div className="bg-black md:h-[100vh] h-[140vh] w-full flex flex-col md:flex-row justify-between items-center">
