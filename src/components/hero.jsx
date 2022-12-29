@@ -30,7 +30,7 @@ function Hero() {
         <img
           src={hero}
           alt={"hero"}
-          className="absolute -z-20 h-screen w-full object-cover"
+          className="absolute -z-20 h-[100vh] w-full object-cover"
         />
       </div>
 

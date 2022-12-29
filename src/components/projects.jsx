@@ -20,17 +20,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="bg-white  w-full">
-      <img
-        src={projectPic}
-        className="w-full md:h-[400vh] h-[200vh] object-cover object-center absolute -z-10"
-        id="pic"
-        style={{ transform: `translateY(${scrollY * 0.3}px)` }}
-      />
-      <div
-        className="bg-black opacity-50 w-full md:h-[400vh] h-[200vh] absolute z-0"
-        style={{ transform: `translateY(${scrollY * 0.3}px)` }}
-      ></div>
+    <div className="bg-green-400  w-full">
       <div className="w-full h-screen flex flex-col items-center z-20 absolute gap-20">
         <h1 className="text-white text-4xl mt-10" id="projects">
           My Projects
