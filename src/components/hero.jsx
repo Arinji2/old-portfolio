@@ -35,7 +35,10 @@ function Hero() {
       </div>
 
       <div className="w-100% h-screen  flex flex-col items-center justify-center gap-10 text-center">
-        <h1 className="text-white text-5xl md:text-6xl z-10  font-bold">
+        <h1
+          className="text-white text-5xl md:text-6xl z-10  font-bold"
+          id="arinji"
+        >
           I am Arinji
         </h1>
         <span className="text-white text-2xl md:text-3xl z-10">

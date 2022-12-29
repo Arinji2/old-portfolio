@@ -27,7 +27,7 @@ function Nav() {
         }
       >
         <div className="w-[30%] flex flex-row items-center justify-start ml-5 text-2xl">
-          Arinji
+          <a href="#arinji">Arinji</a>
         </div>
         <div className="w-[70%]  flex flex-row items-center justify-end mr-5  text-xl gap-5">
           <ul className="inline">
@@ -57,7 +57,9 @@ function Nav() {
         }
       >
         <div className="w-screen flex flex-row items-center justify-center z-10 text-2xl">
-          <h1 className="w-full text-center">Arinji</h1>
+          <h1 className="w-full text-center">
+            <a href="#arinji">Arinji</a>
+          </h1>
 
           <FontAwesomeIcon
             icon={faBars}

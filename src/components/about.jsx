@@ -6,7 +6,7 @@ function About() {
       <div className=" h-screen w-full z-30 flex flex-col items-center justify-center">
         <h1 className="text-4xl text-white z-30 text-center">About Me</h1>
       </div>
-      <div className="bg-black h-[100vh] w-full flex flex-col md:flex-row justify-between items-center">
+      <div className="bg-black md:h-[100vh] h-[140vh] w-full flex flex-col md:flex-row justify-between items-center">
         <div className="md:w-50% h-full">
           <img src={aboutPic} className="w-full h-full md:ml-5" />
         </div>
