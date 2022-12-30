@@ -38,7 +38,7 @@ function Projects() {
             ref={elementRef}
           />
         </div>
-        <h1 className="text-white text-4xl mt-10" id="projects">
+        <h1 className="text-white text-4xl mt-10 z-20" id="projects">
           My Projects
         </h1>
         <div className="flex flex-row flex-wrap items-center justify-center gap-10">
