@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import projectPic from "../assets/projects.png";
 import InfoBot from "../assets/InfoBot.jpg";
-import Library from "../assets/Library.jpg";
+import Memory from "../assets/Memory.jpg";
 import ToDo from "../assets/ToDo.jpg";
 
 function Projects() {
@@ -49,17 +49,20 @@ function Projects() {
             link="https://infobot.tech/"
             git="https://github.com/Arinji2/LandingPage-InfoBot"
           />
-          <Card
-            img={Library}
-            name="Library"
-            disc="A highly advanced Library tool"
-            link=""
-          />
+
           <Card
             img={ToDo}
             name="To Do List"
             disc="Modern take on To Do Lists"
-            link=""
+            link="https://todo.arinji.ga/"
+            git="https://github.com/Arinji2/To-Do-List"
+          />
+          <Card
+            img={Memory}
+            name="Memory Game"
+            disc="A take on a very popular memory game"
+            link="https://memory.arinji.ga/"
+            git="https://github.com/Arinji2/Memory-Game"
           />
         </div>
       </div>
@@ -104,7 +107,7 @@ function Card({ img, name, disc, link, git }) {
         <p
           className="border-2 border-yellow-900 bg-yellow-900 text-white p-2 rounded-lg absolute bottom-16 scale-90 hover:scale-100 transition-all ease-in-out duration-300 hover:cursor-pointer text-sm"
           onClick={() => {
-            window.location.href = link;
+            window.open(link, "_blank");
           }}
         >
           Click to Open
@@ -112,7 +115,7 @@ function Card({ img, name, disc, link, git }) {
         <p
           className="border-2 border-yellow-900 bg-yellow-900 text-white p-2 rounded-lg absolute bottom-5 scale-90 hover:scale-100 transition-all ease-in-out duration-300 hover:cursor-pointer text-sm"
           onClick={() => {
-            window.location.href = git;
+            window.open(git, "_blank");
           }}
         >
           Click to See Code
