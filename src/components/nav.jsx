@@ -43,7 +43,7 @@ function Nav() {
             <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
               <a href="#price">Commissions</a>
             </li>{" "}
-            <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
+            <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
               <a href="#socials">Socials</a>
             </li>
           </ul>
@@ -56,7 +56,7 @@ function Nav() {
             : "md:hidden flex flex-row w-full h-20 bg-transparent fixed top-0 z-50 transition-all ease-in-out duration-300 text-white"
         }
       >
-        <div className="w-screen flex flex-row items-center justify-center z-10 text-2xl">
+        <div className="w-full flex flex-row items-center justify-center z-10 text-2xl">
           <h1 className="w-full text-center">
             <a href="#arinji">Arinji</a>
           </h1>

@@ -24,7 +24,7 @@ function Commissions() {
         Check out my Socials
       </h1>
 
-      <div className="flex flex-row flex-wrap items-center justify-evenly text-3xl w-screen">
+      <div className="flex flex-row flex-wrap items-center justify-evenly text-3xl w-full">
         <a href="https://github.com/Arinji2/">
           <FontAwesomeIcon icon={faGithub} />
         </a>

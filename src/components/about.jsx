@@ -22,7 +22,7 @@ function About() {
             Age:<span className="text-yellow-500"> 15</span>
           </p>
           <p>
-            Nationality:<span className="text-yellow-500"> American</span>
+            Nationality:<span className="text-yellow-500"> Indian</span>
           </p>
           <p>
             Aim:<span className="text-yellow-500"> Work in Google</span>
