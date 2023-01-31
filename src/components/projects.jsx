@@ -27,18 +27,18 @@ function Projects() {
   }, []);
 
   return (
-    <div className="bg-transparent h-screen w-full relative">
-      <div className="w-full h-screen flex flex-col items-center z-20 relative gap-20">
+    <div className="relative h-screen w-full bg-transparent">
+      <div className="relative z-20 flex h-screen w-full flex-col items-center gap-20">
         <div className="z-0">
           <img
             src={projectPic}
             alt={"hero"}
-            className="absolute md:h-full h-[180vh] w-full object-cover z-0 left-0"
+            className="absolute left-0 z-0 h-[180vh] w-full object-cover md:h-full"
             /*style={{ transform: `translateY(${scrollY * 0.5}px)` }} */
             ref={elementRef}
           />
         </div>
-        <h1 className="text-white text-4xl mt-10 z-20" id="projects">
+        <h1 className="z-20 mt-10 text-4xl text-white" id="projects">
           My Projects
         </h1>
         <div className="flex flex-row flex-wrap items-center justify-center gap-10">
@@ -85,27 +85,27 @@ function Card({ img, name, disc, link, git }) {
   };
   return (
     <div
-      className="h-[300px] w-[300px] shadow-md shadow-black scale-90 hover:scale-100 hover:shadow-lg hover:shadow-black transition-all ease-out duration-300 rounded-lg"
+      className="h-[300px] w-[300px] scale-90 rounded-lg shadow-md shadow-black transition-all duration-300 ease-out hover:scale-100 hover:shadow-lg hover:shadow-black"
       style={{ overflow: "hidden" }}
     >
       <img
-        className="w-full h-full object-cover absolute"
+        className="absolute h-full w-full object-cover"
         src={img}
         style={{
           transform: `scale(${zoom})`,
           transition: "all ease-in-out 300ms",
         }}
       />
-      <div className="bg-black w-full h-full opacity-50 z-10 absolute " />
+      <div className="absolute z-10 h-full w-full bg-black opacity-50 " />
       <div
-        className="w-full h-full z-20 relative flex flex-col items-center justify-start gap-5"
+        className="relative z-20 flex h-full w-full flex-col items-center justify-start gap-5"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <h1 className="text-yellow-400 text-2xl mt-10 text-center">{name}</h1>
-        <p className="text-white text-lg mt-10 text-center">{disc}</p>
+        <h1 className="mt-10 text-center text-2xl text-yellow-400">{name}</h1>
+        <p className="mt-10 text-center text-lg text-white">{disc}</p>
         <p
-          className="border-2 border-yellow-900 bg-yellow-900 text-white p-2 rounded-lg absolute bottom-16 scale-90 hover:scale-100 transition-all ease-in-out duration-300 hover:cursor-pointer text-sm"
+          className="absolute bottom-16 scale-90 rounded-lg border-2 border-yellow-900 bg-yellow-900 p-2 text-sm text-white transition-all duration-300 ease-in-out hover:scale-100 hover:cursor-pointer"
           onClick={() => {
             window.open(link, "_blank");
           }}
@@ -113,7 +113,7 @@ function Card({ img, name, disc, link, git }) {
           Click to Open
         </p>
         <p
-          className="border-2 border-yellow-900 bg-yellow-900 text-white p-2 rounded-lg absolute bottom-5 scale-90 hover:scale-100 transition-all ease-in-out duration-300 hover:cursor-pointer text-sm"
+          className="absolute bottom-5 scale-90 rounded-lg border-2 border-yellow-900 bg-yellow-900 p-2 text-sm text-white transition-all duration-300 ease-in-out hover:scale-100 hover:cursor-pointer"
           onClick={() => {
             window.open(git, "_blank");
           }}

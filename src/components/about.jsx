@@ -3,16 +3,16 @@ import aboutPic from "../assets/about.png";
 function About() {
   return (
     <div>
-      <div className=" h-screen w-full z-40 flex flex-col items-center justify-center bg-black relative">
-        <h1 className="text-4xl text-white z-30 text-center">About Me</h1>
+      <div className=" relative z-40 flex h-screen w-full flex-col items-center justify-center bg-black">
+        <h1 className="z-30 text-center text-4xl text-white">About Me</h1>
       </div>
-      <div className="bg-black md:h-[100vh] h-[140vh] w-full flex flex-col md:flex-row justify-between items-center">
+      <div className="flex h-[140vh] w-full flex-col items-center justify-between bg-black md:h-[100vh] md:flex-row">
         <div className="md:w-50% h-full">
-          <img src={aboutPic} className="w-full h-full md:ml-5" />
+          <img src={aboutPic} className="h-full w-full md:ml-5" />
         </div>
 
         <div
-          className="md:w-[50%] h-full flex flex-col items-center justify-center gap-10 text-white text-xl md:text-2xl text-center"
+          className="flex h-full flex-col items-center justify-center gap-10 text-center text-xl text-white md:w-[50%] md:text-2xl"
           id="about"
         >
           <p>

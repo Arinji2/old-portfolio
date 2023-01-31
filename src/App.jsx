@@ -37,7 +37,7 @@ function App() {
   return (
     <React.Fragment>
       <div
-        className={ready ? "App bg-transparent h-fit scroll-smooth" : "hidden"}
+        className={ready ? "App h-fit scroll-smooth bg-transparent" : "hidden"}
       >
         <Nav />
         <Hero />
@@ -51,7 +51,7 @@ function App() {
         className={
           ready
             ? "hidden"
-            : "h-screen w-full flex flex-col items-center justify-center bg-black"
+            : "flex h-screen w-full flex-col items-center justify-center bg-black"
         }
       >
         <Oval secondaryColor="transparent" color="yellow" />

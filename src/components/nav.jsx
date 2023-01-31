@@ -22,28 +22,28 @@ function Nav() {
       <div
         className={
           scroll > 50
-            ? "md:flex hidden flex-row w-full h-20 bg-black fixed top-0 z-50 shadow-md shadow-black transition-all ease-in-out duration-300 text-white"
-            : "md:flex hidden flex-row w-full h-20 bg-transparent fixed top-0 z-50 transition-all ease-in-out duration-300 text-white"
+            ? "fixed top-0 z-50 hidden h-20 w-full flex-row bg-black text-white shadow-md shadow-black transition-all duration-300 ease-in-out md:flex"
+            : "fixed top-0 z-50 hidden h-20 w-full flex-row bg-transparent text-white transition-all duration-300 ease-in-out md:flex"
         }
       >
-        <div className="w-[30%] flex flex-row items-center justify-start ml-5 text-2xl">
+        <div className="ml-5 flex w-[30%] flex-row items-center justify-start text-2xl">
           <a href="#arinji">Arinji</a>
         </div>
-        <div className="w-[70%]  flex flex-row items-center justify-end mr-5  text-xl gap-5">
+        <div className="mr-5  flex w-[70%] flex-row items-center justify-end  gap-5 text-xl">
           <ul className="inline">
-            <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
+            <li className="link link-underline link-underline-black inline border-r-2 border-white pr-2 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer">
               <a href="#about">About</a>
             </li>{" "}
-            <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
+            <li className="link link-underline link-underline-black inline border-r-2 border-white pr-2 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer">
               <a href="#lang">Languages</a>
             </li>{" "}
-            <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
+            <li className="link link-underline link-underline-black inline border-r-2 border-white pr-2 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer">
               <a href="#projects">Projects</a>
             </li>{" "}
-            <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer border-r-2 border-white">
+            <li className="link link-underline link-underline-black inline border-r-2 border-white pr-2 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer">
               <a href="#price">Commissions</a>
             </li>{" "}
-            <li className="inline pr-2 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
+            <li className="link link-underline link-underline-black inline pr-2 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer ">
               <a href="#socials">Socials</a>
             </li>
           </ul>
@@ -52,18 +52,18 @@ function Nav() {
       <div
         className={
           scroll > 50 && nav !== true
-            ? "md:hidden flex flex-row w-full h-20 bg-black fixed top-0 z-50 shadow-md shadow-black transition-all ease-in-out duration-300 text-white"
-            : "md:hidden flex flex-row w-full h-20 bg-transparent fixed top-0 z-50 transition-all ease-in-out duration-300 text-white"
+            ? "fixed top-0 z-50 flex h-20 w-full flex-row bg-black text-white shadow-md shadow-black transition-all duration-300 ease-in-out md:hidden"
+            : "fixed top-0 z-50 flex h-20 w-full flex-row bg-transparent text-white transition-all duration-300 ease-in-out md:hidden"
         }
       >
-        <div className="w-full flex flex-row items-center justify-center z-10 text-2xl">
+        <div className="z-10 flex w-full flex-row items-center justify-center text-2xl">
           <h1 className="w-full text-center">
             <a href="#arinji">Arinji</a>
           </h1>
 
           <FontAwesomeIcon
             icon={faBars}
-            className="left-10 absolute"
+            className="absolute left-10"
             onClick={() => {
               setNav(true);
             }}
@@ -73,32 +73,32 @@ function Nav() {
         <div
           className={
             nav
-              ? "w-[90%] h-screen absolute z-20 bg-black transition-all ease-in-out duration-300"
-              : "w-[0%]  bg-black z-20 absolute transition-all ease-in-out duration-300"
+              ? "absolute z-20 h-screen w-[90%] bg-black transition-all duration-300 ease-in-out"
+              : "absolute  z-20 w-[0%] bg-black transition-all duration-300 ease-in-out"
           }
         >
           <div className="flex flex-row items-start justify-between">
             <div
               className={
                 nav
-                  ? "w-[70%] h-screen flex flex-col items-center justify-start "
+                  ? "flex h-screen w-[70%] flex-col items-center justify-start "
                   : "invisible"
               }
             >
               <ul className="">
-                <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
+                <li className=" link link-underline link-underline-black mt-20 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer ">
                   <a href="#about">About</a>
                 </li>{" "}
-                <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
+                <li className=" link link-underline link-underline-black mt-20 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer ">
                   <a href="#lang">Languages</a>
                 </li>{" "}
-                <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
+                <li className=" link link-underline link-underline-black mt-20 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer ">
                   <a href="#projects">Projects</a>
                 </li>{" "}
-                <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
+                <li className=" link link-underline link-underline-black mt-20 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer ">
                   <a href="#price">Commissions</a>
                 </li>{" "}
-                <li className=" mt-20 link link-underline link-underline-black transition-all ease-in-out duration-300 pb-2 hover:cursor-pointer ">
+                <li className=" link link-underline link-underline-black mt-20 pb-2 transition-all duration-300 ease-in-out hover:cursor-pointer ">
                   <a href="#socials">Socials</a>
                 </li>
               </ul>
@@ -106,7 +106,7 @@ function Nav() {
             <div
               className={
                 nav
-                  ? "w-[30%] h-screen flex flex-col items-end justify-start mr-10 mt-10 text-2xl "
+                  ? "mr-10 mt-10 flex h-screen w-[30%] flex-col items-end justify-start text-2xl "
                   : "invisible"
               }
               onClick={() => {

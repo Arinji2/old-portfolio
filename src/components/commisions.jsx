@@ -9,13 +9,13 @@ import {
 import { faEnvelope, faCopyright } from "@fortawesome/free-solid-svg-icons";
 function Commissions() {
   return (
-    <div className=" h-screen w-full  bg-black flex flex-col items-center justify-start text-white gap-10 relative mt-[80vh] md:mt-0 text-center">
+    <div className=" relative mt-[80vh]  flex h-screen w-full flex-col items-center justify-start gap-10 bg-black text-center text-white md:mt-0">
       <h1 className="text-6xl" id="price">
         Want to Hire Me?
       </h1>
       <p>Feel free to Mail me.</p>
       <a
-        className="border-2 border-yellow-700 bg-yellow-700 p-2 rounded-lg scale-90 hover:scale-100 transition-all ease-in-out duration-300"
+        className="scale-90 rounded-lg border-2 border-yellow-700 bg-yellow-700 p-2 transition-all duration-300 ease-in-out hover:scale-100"
         href="mailTo:arinjaydhar205@gmail.com"
       >
         Click to Mail
@@ -24,7 +24,7 @@ function Commissions() {
         Check out my Socials
       </h1>
 
-      <div className="flex flex-row flex-wrap items-center justify-evenly text-3xl w-full">
+      <div className="flex w-full flex-row flex-wrap items-center justify-evenly text-3xl">
         <a href="https://github.com/Arinji2/">
           <FontAwesomeIcon icon={faGithub} />
         </a>
@@ -38,7 +38,7 @@ function Commissions() {
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
       </div>
-      <div className="bg-blue-800  h-32 absolute bottom-0 w-full flex flex-row items-center justify-center text-center">
+      <div className="absolute  bottom-0 flex h-32 w-full flex-row items-center justify-center bg-blue-800 text-center">
         <p>
           <FontAwesomeIcon icon={faCopyright} /> Copyright Arinji. All Rights
           Reserved
