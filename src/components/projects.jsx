@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import projectPic from "../assets/projects.png";
 import InfoBot from "../assets/InfoBot.jpg";
-import Memory from "../assets/Memory.jpg";
-import ToDo from "../assets/ToDo.jpg";
+import SongSurf from "../assets/SongSurf.jpg";
+import Fusion from "../assets/FusionMania.png";
 
 function Projects() {
   const [scrollY, setScrollY] = useState(window.pageYOffset - 2000);
@@ -51,18 +51,18 @@ function Projects() {
           />
 
           <Card
-            img={ToDo}
-            name="To Do List"
-            disc="Modern take on To Do Lists"
-            link="https://todo.arinji.ga/"
-            git="https://github.com/Arinji2/To-Do-List"
+            img={Fusion}
+            name="Fusion Mania"
+            disc="RNG Game with Unique Avatars"
+            link="https://fusion-mania.pages.dev/"
+            git="https://github.com/Arinji2/Fusion-Mania"
           />
           <Card
-            img={Memory}
-            name="Memory Game"
-            disc="A take on a very popular memory game"
-            link="https://memory.arinji.ga/"
-            git="https://github.com/Arinji2/Memory-Game"
+            img={SongSurf}
+            name="Song Surf"
+            disc="A modern Youtube to Mp3 Downloader"
+            link="https://songsurf.pages.dev/"
+            git="https://github.com/Arinji2/Song-Surf"
           />
         </div>
       </div>
