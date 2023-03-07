@@ -28,7 +28,7 @@ function Commissions() {
         <a href="https://github.com/Arinji2/">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="https://www.instagram.com/34arinji/">
+        <a href="https://www.instagram.com/arinjii/">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a href="https://discordapp.com/users/890486507872342027">
