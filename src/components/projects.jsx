@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import projectPic from "../assets/projects.png";
 import InfoBot from "../assets/InfoBot.jpg";
-import SongSurf from "../assets/SongSurf.jpg";
+import Artist from "../assets/Artist.jpg";
 import Fusion from "../assets/FusionMania.png";
 
 function Projects() {
@@ -43,11 +43,11 @@ function Projects() {
         </h1>
         <div className="flex flex-row flex-wrap items-center justify-center gap-10">
           <Card
-            img={InfoBot}
-            name="InfoBot"
-            disc="One stop shop for all your Java Needs"
-            link="https://infobot.tech/"
-            git="https://github.com/Arinji2/LandingPage-InfoBot"
+            img={Artist}
+            name="Artist Diaries"
+            disc="Art Showcasing Reimagined"
+            link="https://artist.arinji.me/"
+            git="Art Showcasing Reimagined"
           />
 
           <Card
@@ -58,11 +58,11 @@ function Projects() {
             git="https://github.com/Arinji2/Fusion-Mania"
           />
           <Card
-            img={SongSurf}
-            name="Song Surf"
-            disc="A modern Youtube to Mp3 Downloader"
-            link="https://songsurf.pages.dev/"
-            git="https://github.com/Arinji2/Song-Surf"
+            img={InfoBot}
+            name="InfoBot"
+            disc="One stop shop for all your Java Needs"
+            link="https://infobot.tech/"
+            git="https://github.com/Arinji2/LandingPage-InfoBot"
           />
         </div>
       </div>
