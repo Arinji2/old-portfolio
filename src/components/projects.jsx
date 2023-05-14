@@ -3,6 +3,7 @@ import projectPic from "../assets/projects.png";
 import InfoBot from "../assets/InfoBot.jpg";
 import Artist from "../assets/Artist.jpg";
 import Fusion from "../assets/FusionMania.png";
+import Word from "../assets/Word.png";
 
 function Projects() {
   const [scrollY, setScrollY] = useState(window.pageYOffset - 2000);
@@ -27,13 +28,13 @@ function Projects() {
   }, []);
 
   return (
-    <div className="relative h-screen w-full bg-transparent">
-      <div className="relative z-20 flex h-screen w-full flex-col items-center gap-20">
+    <div className="relative h-fit w-full bg-transparent md:h-screen">
+      <div className="relative z-20 flex h-full w-full flex-col items-center gap-20">
         <div className="z-0">
           <img
             src={projectPic}
             alt={"hero"}
-            className="absolute left-0 z-0 h-[180vh] w-full object-cover md:h-full"
+            className="absolute left-0 z-0 h-full w-full object-cover md:h-full"
             /*style={{ transform: `translateY(${scrollY * 0.5}px)` }} */
             ref={elementRef}
           />
@@ -54,7 +55,14 @@ function Projects() {
             img={Fusion}
             name="Fusion Mania"
             disc="RNG Game with Unique Avatars"
-            link="https://fusion-mania.pages.dev/"
+            link="https://fusion-mania.arinji.me/"
+            git="https://github.com/Arinji2/Word-Or-Nonsence"
+          />
+          <Card
+            img={Word}
+            name="Word or Nonsence"
+            disc="AI Game to guess valid words"
+            link="https://game.arinji.me/"
             git="https://github.com/Arinji2/Fusion-Mania"
           />
           <Card

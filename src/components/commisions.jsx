@@ -9,7 +9,7 @@ import {
 import { faEnvelope, faCopyright } from "@fortawesome/free-solid-svg-icons";
 function Commissions() {
   return (
-    <div className=" relative mt-[80vh]  flex h-screen w-full flex-col items-center justify-start gap-10 bg-black text-center text-white md:mt-0">
+    <div className=" relative   flex h-screen w-full flex-col items-center justify-start gap-10 bg-black text-center text-white md:mt-0">
       <h1 className="text-6xl" id="price">
         Want to Hire Me?
       </h1>
