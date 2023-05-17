@@ -4,6 +4,7 @@ import InfoBot from "../assets/InfoBot.jpg";
 import Artist from "../assets/Artist.jpg";
 import Fusion from "../assets/FusionMania.png";
 import Word from "../assets/Word.png";
+import News from "../assets/NewsNest.png";
 
 function Projects() {
   const [scrollY, setScrollY] = useState(window.pageYOffset - 2000);
@@ -29,7 +30,7 @@ function Projects() {
 
   return (
     <div className="relative h-fit w-full bg-transparent md:h-screen">
-      <div className="relative z-20 flex h-full w-full flex-col items-center gap-20">
+      <div className="relative z-20 flex h-fit w-full flex-col items-center gap-20">
         <div className="z-0">
           <img
             src={projectPic}
@@ -42,13 +43,20 @@ function Projects() {
         <h1 className="z-20 mt-10 text-4xl text-white" id="projects">
           My Projects
         </h1>
-        <div className="flex flex-row flex-wrap items-center justify-center gap-10">
+        <div className="mb-10 flex flex-row flex-wrap items-center justify-center gap-10">
+          <Card
+            img={News}
+            name="News Nest"
+            disc="Discover. Explore. Stay Informed."
+            link="https://news.arinji.me/"
+            git="https://github.com/Arinji2/news-nest"
+          />
           <Card
             img={Artist}
             name="Artist Diaries"
             disc="Art Showcasing Reimagined"
             link="https://artist.arinji.me/"
-            git="Art Showcasing Reimagined"
+            git="https://github.com/Arinji2/Artist-Diaries"
           />
 
           <Card

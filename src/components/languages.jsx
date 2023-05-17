@@ -7,7 +7,7 @@ import {
   faJava,
 } from "@fortawesome/free-brands-svg-icons";
 import TailwindPic from "../assets/tailwindcss.svg";
-
+import NextPic from "../assets/nextjs.svg";
 function Language() {
   return (
     <div>
@@ -19,6 +19,25 @@ function Language() {
           A list of Frameworks and Libraries Used by Me
         </h1>
       </div>
+      <div className="flex h-[120vh] w-full flex-col items-center justify-start gap-14 bg-[#1b1a1a] text-white md:h-[80vh]">
+        <h1 className="z-20 mt-10 text-4xl text-white">Next JS</h1>
+
+        <p className="z-20 text-center">
+          Next.js is a flexible React framework that gives building blocks to
+          create fast web applications.
+        </p>
+        <div className="z-20 flex w-full flex-col items-center justify-evenly gap-5 md:flex-row">
+          <div className="flex h-[30vh] w-[30vh] scale-90 flex-col items-center justify-center gap-5 rounded-lg bg-black text-white shadow-md shadow-black transition-all duration-500 ease-in-out hover:scale-100 hover:cursor-pointer">
+            <h1 className="text-xl">Lines Written</h1>
+            <p>5000+</p>
+          </div>
+          <img src={NextPic} className="h-[90px] w-[90px]" />
+          <div className="flex h-[30vh] w-[30vh] scale-90 flex-col items-center justify-center gap-5 rounded-lg bg-black text-white shadow-md shadow-black transition-all duration-500 ease-in-out hover:scale-100 hover:cursor-pointer">
+            <h1 className="text-xl">Projects Made</h1>
+            <p>10+</p>
+          </div>
+        </div>
+      </div>
       <div className="flex h-[120vh] w-full flex-col items-center justify-start gap-14 bg-blue-800 text-white md:h-[80vh]">
         <h1 className="z-20 mt-10 text-4xl text-white">React</h1>
 
@@ -29,7 +48,7 @@ function Language() {
         <div className="z-20 flex w-full flex-col items-center justify-evenly gap-5 md:flex-row">
           <div className="flex h-[30vh] w-[30vh] scale-90 flex-col items-center justify-center gap-5 rounded-lg bg-blue-900 text-white shadow-md shadow-black transition-all duration-500 ease-in-out hover:scale-100 hover:cursor-pointer">
             <h1 className="text-xl">Lines Written</h1>
-            <p>3000+</p>
+            <p>5000+</p>
           </div>
           <FontAwesomeIcon icon={faReact} className="text-8xl" />
           <div className="flex h-[30vh] w-[30vh] scale-90 flex-col items-center justify-center gap-5 rounded-lg bg-blue-900 text-white shadow-md shadow-black transition-all duration-500 ease-in-out hover:scale-100 hover:cursor-pointer">
@@ -49,12 +68,12 @@ function Language() {
         <div className="z-20 flex w-full flex-col items-center justify-evenly gap-5 md:flex-row">
           <div className="flex h-[30vh] w-[30vh] scale-90 flex-col items-center justify-center gap-5 rounded-lg bg-cyan-900 text-white shadow-md shadow-black transition-all duration-500 ease-in-out hover:scale-100 hover:cursor-pointer">
             <h1 className="text-xl">Lines Written</h1>
-            <p>2000+</p>
+            <p>7000+</p>
           </div>
           <img src={TailwindPic} className="text-9xl" />
           <div className="flex h-[30vh] w-[30vh] scale-90 flex-col items-center justify-center gap-5 rounded-lg bg-cyan-900 text-white shadow-md shadow-black transition-all duration-500 ease-in-out hover:scale-100 hover:cursor-pointer">
             <h1 className="text-xl">Projects Made</h1>
-            <p>7+</p>
+            <p>10+</p>
           </div>
         </div>
       </div>
