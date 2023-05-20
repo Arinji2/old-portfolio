@@ -5,6 +5,7 @@ import Artist from "../assets/Artist.jpg";
 import Fusion from "../assets/FusionMania.png";
 import Word from "../assets/Word.png";
 import News from "../assets/NewsNest.png";
+import List from "../assets/List.svg";
 
 function Projects() {
   const [scrollY, setScrollY] = useState(window.pageYOffset - 2000);
@@ -45,6 +46,13 @@ function Projects() {
         </h1>
         <div className="mb-10 flex flex-row flex-wrap items-center justify-center gap-10">
           <Card
+            img={List}
+            name="Listify"
+            disc="Spotify Playlists, Redesigned"
+            link="https://listify.arinji.me/"
+            git="https://github.com/Arinji2/listify"
+          />
+          <Card
             img={News}
             name="News Nest"
             disc="Discover. Explore. Stay Informed."
@@ -77,8 +85,8 @@ function Projects() {
             img={InfoBot}
             name="InfoBot"
             disc="One stop shop for all your Java Needs"
-            link="https://infobot.tech/"
-            git="https://github.com/Arinji2/LandingPage-InfoBot"
+            link="https://infobot.arinji.me/"
+            git="https://github.com/Arinji2/infobot-os"
           />
         </div>
       </div>
