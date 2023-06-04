@@ -31,10 +31,7 @@ function About() {
 
           <p>
             Tech Stack:
-            <span className="text-yellow-500">
-              {" "}
-              Next JS with Tailwind CSS and Supabase
-            </span>
+            <span className="text-yellow-500"> Next JS with Tailwind CSS</span>
           </p>
         </div>
       </div>

@@ -30,7 +30,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="relative h-fit w-full bg-transparent md:h-screen">
+    <div className="relative h-fit w-full bg-transparent ">
       <div className="relative z-20 flex h-fit w-full flex-col items-center gap-20">
         <div className="z-0">
           <img
