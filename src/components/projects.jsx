@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import projectPic from "../assets/projects.png";
 import InfoBot from "../assets/InfoBot.jpg";
-import Artist from "../assets/Artist.jpg";
+import Gourmet from "../assets/Gourmet.jpg";
 import Fusion from "../assets/FusionMania.png";
 import Word from "../assets/Word.png";
 import News from "../assets/NewsNest.png";
@@ -60,11 +60,11 @@ function Projects() {
             git="https://github.com/Arinji2/news-nest"
           />
           <Card
-            img={Artist}
-            name="Artist Diaries"
-            disc="Art Showcasing Reimagined"
-            link="https://artist.arinji.me/"
-            git="https://github.com/Arinji2/Artist-Diaries"
+            img={Gourmet}
+            name="Gourmet Gusto"
+            disc="Savor. Create. Inspire."
+            link="https://food.arinji.me/"
+            git="https://github.com/Arinji2/gourmet-gusto"
           />
 
           <Card
